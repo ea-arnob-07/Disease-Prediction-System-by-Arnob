@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Prediction System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Exo+2:wght@400;600&display=swap" rel="stylesheet">
+    <div class="ecg-line"></div>
+
+
+<link rel="stylesheet" href="/static/style.css">
+
+
+</head>
+<body>
+   
+<div class="cursor-dot"></div>
+    <div class="cursor"></div>
+<div class="cursor-blur"></div>
+    <div class="particles">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+    <div class="grid-bg"></div>
+
+<div class="container">
+
+
+<div class="header">
+    <h1>🩺 Disease Prediction System</h1>
+    <p>AI-powered preliminary disease screening</p>
+</div>
+
+<div class="card">
+
+    <h2>Select Symptoms</h2>
+
+    <div class="symptom-grid">
+
+        <div class="field">
+            <label>Fever</label>
+            <select id="Fever">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label>Cough</label>
+            <select id="Cough">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label>Headache</label>
+            <select id="Headache">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label>Fatigue</label>
+            <select id="Fatigue">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label>Sore Throat</label>
+            <select id="Sore_Throat">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label>Runny Nose</label>
+            <select id="Runny_Nose">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label>Shortness of Breath</label>
+            <select id="Shortness_of_Breath">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label>Nausea</label>
+            <select id="Nausea">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label>Body Ache</label>
+            <select id="Body_Ache">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label>Diarrhea</label>
+            <select id="Diarrhea">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+        </div>
+
+    </div>
+
+    <button id="predictBtn">
+    ANALYZE SYMPTOMS
+</button>
+
+
+
+    <div class="project-credit">
+
+    <h3>EVOLUTIONX</h3>
+
+    <p class="credit-label">
+        Developed By
+    </p>
+
+    <p class="credit-name lead-author">
+        Estiuk Arafat Arnob
+    </p>
+
+    <p class="credit-name">
+        Shaheer Tashfeen Najmee
+    </p>
+
+    <p class="credit-name">
+        Abubakkar Siddik
+    </p>
+
+</div>
+</div>
+
+
+</div>
+
+<div id="resultModal" class="modal">
+
+    <div id="modalCard" class="modal-content">
+
+        <div class="scan-line"></div>
+
+        <span class="close">&times;</span>
+
+        <h2>🩺 Disease Analysis Report</h2>
+
+        <div id="diseaseList"></div>
+
+        <h3 id="riskLevel"></h3>
+
+        <p id="riskMessage"></p>
+
+    </div>
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
